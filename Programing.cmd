@@ -6,6 +6,7 @@ choco install 7zip.install --version 22.1 -y
 choco install pgadmin4 --version 6.13 -y
 choco install spotify -y
 Set-ItemProperty -Path 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\' -Name 'ProxyEnable' -Value 0
+winget install --name "PuTTY" --accept-package-agreements --accept-source-agreements
 winget install --name "Windows Terminal" --accept-package-agreements --accept-source-agreements
 winget install --name "notepad++" --accept-package-agreements --accept-source-agreements
 winget install --name "python 3.11" --accept-package-agreements --accept-source-agreements
