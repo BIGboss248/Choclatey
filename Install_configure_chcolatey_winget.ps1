@@ -1,2 +1,5 @@
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-winget source add --name msstore https://storeedgefd.dsx.mp.microsoft.com/v9.0
+set-executionpolicy remotesigned
+# Copy the items of Local choco setup to drive c
+$Path = Join-Path -Path $pwd  -ChildPath ".\Choclatey\Resources\choco-setup"
+Copy-Item $Path "C:\" -recurse
+# cd "C:\choco-setup\files"
