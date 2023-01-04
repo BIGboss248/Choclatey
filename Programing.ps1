@@ -5,8 +5,7 @@ choco install chocolateygui -y
 choco install 7zip.install -y
 choco install pgadmin4 -y
 choco install spotify -y
-choco install puppet-agent -y
-choco install puppet-bolt -y
+choco install ruby -y
 Set-ItemProperty -Path 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\' -Name 'ProxyEnable' -Value 0
 winget install --name "PuTTY" --accept-package-agreements --accept-source-agreements
 winget install --name "Windows Terminal" --accept-package-agreements --accept-source-agreements
