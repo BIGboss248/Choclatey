@@ -6,6 +6,9 @@ choco install 7zip.install -y
 choco install pgadmin4 -y
 choco install spotify -y
 choco install ruby -y
+choco install dropbox -y
+choco install googledrive -y
+choco install chef-workstation -y
 Set-ItemProperty -Path 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\' -Name 'ProxyEnable' -Value 0
 winget install --name "PuTTY" --accept-package-agreements --accept-source-agreements
 winget install --name "Windows Terminal" --accept-package-agreements --accept-source-agreements
