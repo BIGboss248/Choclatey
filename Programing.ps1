@@ -1,4 +1,3 @@
-choco install atom -y
 choco install git -y
 choco install docker-desktop -y
 choco install virtualbox -y
