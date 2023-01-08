@@ -11,6 +11,7 @@ Copy-Item $Choco_Path_dir "C:\" -recurse
 #Install Nuget Package Provider
 mkdir "C:\Program Files\PackageManagement\ProviderAssemblies\nuget\2.8.5.208"
 Copy-Item -Path $nuget_path -Destination "C:\Program Files\PackageManagement\ProviderAssemblies\nuget\2.8.5.208"
+Unblock-File "C:\Program Files\PackageManagement\ProviderAssemblies\nuget\2.8.5.208\Microsoft.PackageManagement.NuGetProvider-2.8.5.208.dll"
 #Install Chocolatey
 Set-Location $choco_path
 Start-Process powershell -verb runas -ArgumentList $choco_path
