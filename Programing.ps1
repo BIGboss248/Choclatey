@@ -8,16 +8,15 @@ choco install spotify -y
 choco install ruby -y
 choco install dropbox -y
 choco install googledrive -y
-choco install megasync -y
 choco install chef-workstation -y
+choco install putty.install -y
+choco install microsoft-windows-terminal -y
+choco install notepadplusplus.install -y
+choco install python -y
+choco install vscode.install -y
 #Possible malware in this package
 choco install winsetupfromusb -y
 Install-Module ps2exe -Force
 Set-ItemProperty -Path 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\' -Name 'ProxyEnable' -Value 0
-winget install --name "PuTTY" --accept-package-agreements --accept-source-agreements
-winget install --name "Windows Terminal" --accept-package-agreements --accept-source-agreements
-winget install --name "notepad++" --accept-package-agreements --accept-source-agreements
-winget install --name "python 3.11" --accept-package-agreements --accept-source-agreements
-winget install --name "Visual Studio Code" --accept-package-agreements --accept-source-agreements
 winget install --name "Power BI Desktop" --accept-package-agreements --accept-source-agreements
 winget install --name "Ubuntu 22.04.1 LTS" --accept-package-agreements --accept-source-agreements

@@ -1,5 +1,5 @@
 choco install foxitreader -y
-choco install anydesk -y
+choco install anydesk.install -y
 choco install googlechrome -y
 choco install firefox -y
 choco install 7zip.install -y
