@@ -14,6 +14,9 @@ choco install microsoft-windows-terminal -y
 choco install notepadplusplus.install -y
 choco install python -y
 choco install vscode.install -y
+choco install opera-gx -y
+choco install firefox -y
+choco install googlechrome -y
 #Possible malware in this package
 choco install winsetupfromusb -y
 Install-Module ps2exe -Force
