@@ -1,4 +1,4 @@
-$script_Path = $pwd.Path
+$script_Path = Split-Path -Path $MyInvocation.MyCommand.Path -Parent
 $Choco_Path_dir = Join-Path -Path $script_Path  -ChildPath "\Resources\choco-setup"
 $nuget_path = Join-Path -path $script_Path -ChildPath "\Resources\Microsoft.PackageManagement.NuGetProvider-2.8.5.208.dll"
 $choco_path = "C:\choco-setup\files\ChocolateyLocalInstall.ps1"
