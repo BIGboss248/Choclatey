@@ -1,6 +1,7 @@
 # chocolatey config file C:\ProgramData\chocolatey\config\chocolatey.config
 
-#initialize
+#initialize and prerequisite
+choco install dotnet-6.0-desktopruntime -y
 choco install chocolateygui -y
 choco install 7zip.install -y
 choco install anydesk.in
