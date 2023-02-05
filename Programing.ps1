@@ -5,6 +5,7 @@ choco install dotnet-6.0-desktopruntime -y
 choco install chocolateygui -y
 choco install 7zip.install -y
 choco install anydesk.in -y
+choco install teamviewer -y
 # virtual OS
 choco install docker-desktop -y
 choco install virtualbox -y
@@ -25,7 +26,14 @@ choco install firefox -y
 choco install googlechrome -y
 # Network tools
 choco install termius -y
+choco install winscp.install -y #Transfer data to and from server
+choco install nmap -y
 choco install advanced-ip-scanner -y
+choco install pingplotter -y
+choco install wireshark -y  #network packet analyzer
+#system optimisation and anty virus
+choco install afedteated -y
+choco install testdisk-photorec -y
 # Video player
 choco install vlc -y
 # Game
@@ -37,3 +45,6 @@ Install-Module ps2exe -Force
 Set-ItemProperty -Path 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\' -Name 'ProxyEnable' -Value 0
 winget install --name "Power BI Desktop" --accept-package-agreements --accept-source-agreements
 winget install --name "Ubuntu 22.04.1 LTS" --accept-package-agreements --accept-source-agreements
+#####################################################################################################
+# These apps need some manual installation
+choco install gns3 -y   #network topology design
