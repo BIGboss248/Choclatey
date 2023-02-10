@@ -39,6 +39,7 @@ choco install vlc -y
 # Game
 choco install steam -y
 choco install origin -y
+choco install geforce-experience -y
 # Possible malware in this package
 choco install winsetupfromusb -y
 Install-Module ps2exe -Force
