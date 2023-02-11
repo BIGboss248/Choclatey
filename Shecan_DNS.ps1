@@ -12,7 +12,10 @@ $nic = Get-WmiObject Win32_NetworkAdapterConfiguration | Where-Object {$_.IPEnab
 $nic.SetDNSServerSearchOrder($null)
 
 # Define DNS Servers
-$DNSServers = @("178.22.122.100","185.51.200.2")
+$Shecan_DNSServers = @("178.22.122.100","185.51.200.2")
+$Cloudflare_DNSServers = @("1.1.1.1","1.0.0.1")
+$Cisco_DNSServers = @("208.67.222.222","208.67.220.220")
+$GOogle_DNSServers = @("8.8.8.8","8.8.4.4")
 
 # Get Network Adapters with IP Address enabled
 $nic = Get-WmiObject Win32_NetworkAdapterConfiguration | Where-Object {$_.IPEnabled -eq "TRUE"}
@@ -21,4 +24,4 @@ $nic = Get-WmiObject Win32_NetworkAdapterConfiguration | Where-Object {$_.IPEnab
 $nic.EnableStatic($nic.IPAddress,$Nic.IPSubnet)
 
 # Set the DNS Servers
-$nic.SetDNSServerSearchOrder($DNSServers) 
+$nic.SetDNSServerSearchOrder($Shecan_DNSServers) 
