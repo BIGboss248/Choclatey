@@ -1,5 +1,15 @@
 # chocolatey config file C:\ProgramData\chocolatey\config\chocolatey.config
 
+
+'running with full privileges'
+# Check for permissions 
+if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
+    # Relaunch as administrator
+    $arguments = "& '" + $myinvocation.mycommand.definition + "'"
+    Start-Process powershell -Verb RunAs -ArgumentList $arguments
+    Exit
+}
+Set-ExecutionPolicy Bypass -Scope Process -Force;
 # Initialize and prerequisite
 choco install dotnet-6.0-desktopruntime -y
 choco install chocolateygui -y

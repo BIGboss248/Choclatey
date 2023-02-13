@@ -4,6 +4,13 @@ $nuget_path = Join-Path -path $script_Path -ChildPath "\Resources\Microsoft.Pack
 $choco_path = "C:\choco-setup\files\ChocolateyLocalInstall.ps1"
 
 'running with full privileges'
+# Check for permissions 
+if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
+    # Relaunch as administrator
+    $arguments = "& '" + $myinvocation.mycommand.definition + "'"
+    Start-Process powershell -Verb RunAs -ArgumentList $arguments
+    Exit
+}
 Set-ExecutionPolicy Bypass -Scope Process -Force;
 # Copy the items of Local choco setup to drive c
 Set-Location $script_Path
