@@ -1,7 +1,7 @@
 # chocolatey config file C:\ProgramData\chocolatey\config\chocolatey.config
 
 
-'running with full privileges'
+'________________running with full privileges________________'
 # Check for permissions 
 if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
     # Relaunch as administrator
@@ -10,19 +10,24 @@ if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
     Exit
 }
 Set-ExecutionPolicy Bypass -Scope Process -Force;
-# Initialize and prerequisite
+
+
+'________________Doc viewer and editer________________'
+choco install foxitreader -y
+choco install adobereader
+'________________Initialize and prerequisite________________'
 choco install dotnet-6.0-desktopruntime -y
 choco install chocolateygui -y
 choco install 7zip.install -y
 choco install anydesk.in -y
 choco install teamviewer -y
-# virtual OS
+'________________virtual OS________________'
 choco install docker-desktop -y
 choco install virtualbox -y
-# Backup
+'________________Backup________________'
 choco install dropbox -y
 choco install googledrive -y
-# Coding
+'________________Coding________________'
 choco install notepadplusplus.install -y
 choco install microsoft-windows-terminal -y
 choco install git -y
@@ -30,29 +35,28 @@ choco install ruby -y
 choco install python -y
 choco install vscode.install -y
 choco install pgadmin4 -y
-# Internet browsers 
+'________________Internet browsers________________' 
 choco install opera-gx -y
 choco install firefox -y
 choco install googlechrome -y
-# Network tools
+'________________Network tools________________'
 choco install termius -y
 choco install winscp.install -y #Transfer data to and from server
 choco install nmap -y
 choco install advanced-ip-scanner -y
 choco install pingplotter -y
 choco install wireshark -y  #network packet analyzer
-#system optimisation and anty virus
+choco install winsetupfromusb -y #Bootable usb
+'________________system optimisation and anty virus________________'
 choco install afedteated -y
 choco install testdisk-photorec -y
-# Video player
+'________________Video player________________'
 choco install vlc -y
-# Game
+'________________Game________________'
 choco install steam -y
 choco install origin -y
 choco install geforce-experience -y
-# Possible malware in this package
-choco install winsetupfromusb -y
-Install-Module ps2exe -Force
+Install-Module ps2exe -Force #Convert powershell script to executable file
 Set-ItemProperty -Path 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\' -Name 'ProxyEnable' -Value 0
 winget install --name "Power BI Desktop" --accept-package-agreements --accept-source-agreements
 winget install --name "Ubuntu 22.04.1 LTS" --accept-package-agreements --accept-source-agreements
