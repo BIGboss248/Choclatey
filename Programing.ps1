@@ -19,7 +19,7 @@ choco install adobereader -y
 choco install dotnet-6.0-desktopruntime -y
 choco install chocolateygui -y
 choco install 7zip.install -y
-choco install anydesk.in -y
+choco install anydesk.install
 choco install teamviewer -y
 '________________virtual OS________________'
 choco install docker-desktop -y
@@ -54,7 +54,7 @@ choco install testdisk-photorec -y
 choco install vlc -y
 '________________Game________________'
 choco install steam -y
-choco install origin -y
+choco install ea-app
 choco install geforce-experience -y
 Install-Module ps2exe -Force #Convert powershell script to executable file
 Set-ItemProperty -Path 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\' -Name 'ProxyEnable' -Value 0
