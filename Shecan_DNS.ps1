@@ -15,7 +15,7 @@ if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
     Exit
 }
 Set-ExecutionPolicy Bypass -Scope Process -Force;
-
+'________________running with full privileges________________'
 $nic = Get-WmiObject Win32_NetworkAdapterConfiguration | Where-Object {$_.IPEnabled -eq "TRUE"}
 $nic.SetDNSServerSearchOrder($null)
 

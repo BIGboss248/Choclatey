@@ -1,7 +1,6 @@
 # chocolatey config file C:\ProgramData\chocolatey\config\chocolatey.config
 
 
-'________________running with full privileges________________'
 # Check for permissions 
 if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
     # Relaunch as administrator
@@ -9,12 +8,13 @@ if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
     Start-Process powershell -Verb RunAs -ArgumentList $arguments
     Exit
 }
+'________________running with full privileges________________'
 Set-ExecutionPolicy Bypass -Scope Process -Force;
 
 
 '________________Doc viewer and editer________________'
 choco install foxitreader -y
-choco install adobereader
+choco install adobereader -y
 '________________Initialize and prerequisite________________'
 choco install dotnet-6.0-desktopruntime -y
 choco install chocolateygui -y

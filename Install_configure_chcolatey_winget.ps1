@@ -12,6 +12,7 @@ if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
     Exit
 }
 Set-ExecutionPolicy Bypass -Scope Process -Force;
+'________________running with full privileges________________'
 # Copy the items of Local choco setup to drive c
 Set-Location $script_Path
 Copy-Item $Choco_Path_dir "C:\" -recurse

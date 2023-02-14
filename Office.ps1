@@ -1,4 +1,3 @@
-'running with full privileges'
 # Check for permissions 
 if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
     # Relaunch as administrator
@@ -7,9 +6,10 @@ if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
     Exit
 }
 Set-ExecutionPolicy Bypass -Scope Process -Force;
+'________________running with full privileges________________'
 '________________Doc viewer and editer________________'
 choco install foxitreader -y
-choco install adobereader
+choco install adobereader -y
 '________________Initialize and prerequisite________________'
 choco install chocolateygui -y
 choco install 7zip.install -y

@@ -1,6 +1,4 @@
 #This script will add user IT makes it admin and gives it access to remote desktop and ssh based on the ssh public key provided
-'________________Configuring SSH and remote desktop________________'
-'________________running with full privileges________________'
 # Check for permissions 
 if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
     # Relaunch as administrator
@@ -9,6 +7,8 @@ if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
     Exit
 }
 Set-ExecutionPolicy Bypass -Scope Process -Force;
+'________________Configuring SSH and remote desktop________________'
+'________________running with full privileges________________'
 
 $pub_key = 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCL0dEJNT8Kp7QJkjY23kJQsH8xlPDz4vVGPDoRuNr/D2TbzsfUrURKJKtE2VKACK4WyoEGeaWeVWzbjuLu3T5t8LFS5mwcqp7+RKeE50K39O2AffgXGMtASNbdI2h0U7MKCQtbN7PTbLOhneIF9k2xuBwfQThfzAO2i7ZmuWrlwY7cE0Rqi2KX8aSxqv+Fz+ttYOym4Qeiyuk/I3UWMZIe44I1c5QGEcef3QVLk2HVR4nY/6aOgoT1Jpb+2FlMv35gl/U/Ob5tjkA1DeD8x57oC60qrljb3CI/32AW1UKgRsXTKxM1bSwr3doRVvLvl+h7gdDPjylLurllTVIzQEIP rsa-key-20230214'
 # Create a new user named "IT"
