@@ -41,12 +41,12 @@ choco install firefox -y
 choco install googlechrome -y
 '________________Network tools________________'
 choco install termius -y
-choco install winscp.install -y #Transfer data to and from server
 choco install nmap -y
 choco install advanced-ip-scanner -y
 choco install pingplotter -y
 choco install wireshark -y  #network packet analyzer
 choco install winsetupfromusb -y #Bootable usb
+choco install nexus-repository -y
 '________________system optimisation and anty virus________________'
 choco install afedteated -y
 choco install testdisk-photorec -y
