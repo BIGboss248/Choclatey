@@ -13,7 +13,7 @@ choco install adobereader -y
 '________________Initialize and prerequisite________________'
 choco install chocolateygui -y
 choco install 7zip.install -y
-choco install anydesk.in -y
+choco install anydesk.install -y
 choco install teamviewer -y
 '________________Network tools________________'
 choco install advanced-ip-scanner -y
