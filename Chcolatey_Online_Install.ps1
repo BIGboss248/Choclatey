@@ -8,3 +8,4 @@ if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 '_______________________online installation chocolatey_______________________'
 '________________running with full privileges________________'
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+choco source add -n IT -s "http://btp-it:8081/repository/choco-group/" -Priority  2

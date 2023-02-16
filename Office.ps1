@@ -7,7 +7,6 @@ if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 }
 Set-ExecutionPolicy Bypass -Scope Process -Force;
 '________________running with full privileges________________'
-choco source add -n IT -s 'http://btp-it:8081/repository/choco-group/' --priority = 2
 '________________Doc viewer and editer________________'
 choco install foxitreader -y
 choco install adobereader -y
