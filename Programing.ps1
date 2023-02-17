@@ -47,6 +47,7 @@ choco install pingplotter -y
 choco install wireshark -y  #network packet analyzer
 choco install winsetupfromusb -y #Bootable usb
 choco install nexus-repository -y
+choco install winbox -y # Mikrotik Router OS
 '________________system optimisation and anty virus________________'
 choco install afedteated -y
 choco install testdisk-photorec -y
