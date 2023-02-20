@@ -63,4 +63,3 @@ winget install --name "Power BI Desktop" --accept-package-agreements --accept-so
 winget install --name "Ubuntu 22.04.1 LTS" --accept-package-agreements --accept-source-agreements
 #####################################################################################################
 # These apps need some manual installation
-choco install gns3 -y   #network topology design
