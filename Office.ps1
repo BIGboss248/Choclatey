@@ -12,14 +12,11 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;
 '________________________________________________running with full privileges________________________________________________'
 '________________________________________________Doc viewer and editer________________________________________________'
 choco install foxitreader -y
-choco install adobereader -y
 '________________________________________________Initialize and prerequisite________________________________________________'
 choco install chocolateygui -y
 choco install 7zip.install -y
 choco install anydesk.install -y
-choco install teamviewer -y
 '________________________________________________Network tools________________________________________________'
-choco install advanced-ip-scanner -y
 '________________________________________________Backup________________________________________________'
 choco install dropbox -y
 choco install googledrive -y
@@ -35,3 +32,8 @@ choco install firefox -y
 choco install googlechrome -y
 '________________________________________________Video player________________________________________________'
 choco install vlc -y
+'________________________________________________Long Instalation________________________________________________'
+choco install adobereader -y
+choco install teamviewer -y
+'________________________________________________Install Problem________________________________________________'
+choco install advanced-ip-scanner -y
