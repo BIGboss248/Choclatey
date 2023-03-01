@@ -24,6 +24,8 @@ choco install teamviewer -y
 '________________virtual OS________________'
 choco install docker-desktop -y
 choco install virtualbox -y
+choco install vmware-workstation-player -y
+'GNS3 need to be manualy installed'
 '________________Backup________________'
 choco install dropbox -y
 choco install googledrive -y
@@ -46,7 +48,7 @@ choco install advanced-ip-scanner -y
 choco install pingplotter -y
 choco install wireshark -y  #network packet analyzer
 choco install winsetupfromusb -y #Bootable usb
-choco install nexus-repository -y
+# choco install nexus-repository -y
 choco install winbox -y # Mikrotik Router OS
 '________________system optimisation and anty virus________________'
 choco install afedteated -y
