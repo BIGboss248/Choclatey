@@ -32,4 +32,4 @@ $nic = Get-WmiObject Win32_NetworkAdapterConfiguration | Where-Object {$_.IPEnab
 $nic.EnableStatic($nic.IPAddress,$Nic.IPSubnet)
 
 # Set the DNS Servers
-$nic.SetDNSServerSearchOrder($Shecan_DNSServers) 
+$nic.SetDNSServerSearchOrder($Shecan) 
