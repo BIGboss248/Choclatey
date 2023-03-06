@@ -50,9 +50,10 @@ choco install wireshark -y  #network packet analyzer
 choco install winsetupfromusb -y #Bootable usb
 # choco install nexus-repository -y
 choco install winbox -y # Mikrotik Router OS
-'________________system optimisation and anty virus________________'
+'________________system optimisation and anti virus________________'
 choco install afedteated -y
 choco install testdisk-photorec -y
+winget install --id Microsoft.Sysinternals.ProcessExplorer
 '________________Video player________________'
 choco install vlc -y
 '________________Game________________'
