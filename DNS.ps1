@@ -1,6 +1,7 @@
 
 #   Shekan 178.22.122.100    185.51.200.2
 #   Radarbazi   10.202.10.10    10.202.10.11
+#   Electro 78.157.42.100   78.157.42.101
 #   Cloudflare  1.1.1.1     1.0.0.1
 #   google      8.8.8.8     8.8.4.4
 #   Cisco       208.67.222.222  208.67.220.220
@@ -20,6 +21,8 @@ $nic = Get-WmiObject Win32_NetworkAdapterConfiguration | Where-Object {$_.IPEnab
 $nic.SetDNSServerSearchOrder($null)
 
 # Define DNS Servers
+$Electro = @("78.157.42.100","78.157.42.101")
+$Radar = @("10.202.10.10","10.202.10.11")
 $Shecan = @("178.22.122.100","185.51.200.2")
 $Cloudflare = @("1.1.1.1","1.0.0.1")
 $Cisco = @("208.67.222.222","208.67.220.220")
