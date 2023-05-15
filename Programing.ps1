@@ -29,13 +29,12 @@ choco install googledrive -y
 '________________Coding________________'
 choco install notepadplusplus.install -y
 choco install git -y
-choco install ruby -y
 choco install python -y
 choco install vscode.install -y
 '________________Internet browsers________________' 
-#choco install opera-gx -y
 #choco install firefox -y
 #choco install googlechrome -y
+choco install internet-download-manager -y
 '________________Network tools________________'
 choco install termius -y
 choco install advanced-ip-scanner -y
