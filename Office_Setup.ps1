@@ -75,7 +75,6 @@ choco install vlc -y
 '________________________________________________system optimisation and anti virus________________________________________________'
 winget install --id Microsoft.Sysinternals.ProcessExplorer
 '________________________________________________Long Instalation________________________________________________'
-choco install adobereader -y
 choco install teamviewer -y
 '________________________________________________Install Problem________________________________________________'
 choco install advanced-ip-scanner -y
