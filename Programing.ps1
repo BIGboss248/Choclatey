@@ -24,8 +24,8 @@ choco install anydesk.install -y
 choco install docker-desktop -y
 choco install virtualbox -y
 # Install zsh and "oh my zsh" and power10k
-winget install Canonical.Ubuntu.2204
-winget  install kalilinux.kalilinux
+winget install Canonical.Ubuntu.2204 --accept-source-agreements
+winget  install kalilinux.kalilinux --accept-source-agreements
 '________________Coding________________'
 choco install notepadplusplus.install -y
 choco install git -y
@@ -42,7 +42,8 @@ choco install wireshark -y  #network packet analyzer
 choco install winsetupfromusb -y #Bootable usb
 # choco install nexus-repository -y
 '________________system optimisation and anti virus________________'
-winget install --id Microsoft.Sysinternals.ProcessExplorer
+winget install --id Microsoft.Sysinternals.ProcessExplorer --accept-source-agreements
+winget install --id Python.Python.3.12 --accept-source-agreements
 '________________Video player________________'
 choco install vlc -y
 '________________Game________________'
