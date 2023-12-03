@@ -8,47 +8,35 @@ if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
     Start-Process powershell -Verb RunAs -ArgumentList $arguments
     Exit
 }
+'________________Disalbe right click file properties menue___________'
+reg add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
 '________________running with full privileges________________'
 Set-ExecutionPolicy Bypass -Scope Process -Force;
 
-choco install cygwin  -y
 choco install starship  -y
 '________________Doc viewer and editer________________'
-choco install foxitreader -y
+winget install -e --id Foxit.FoxitReader --accept-source-agreements
+winget install --id 9WZDNCRD29V9 --accept-source-agreements #install office365
 '________________Initialize and prerequisite________________'
 choco install dotnet-6.0-desktopruntime -y
 choco install chocolateygui -y
-choco install 7zip.install -y
-choco install anydesk.install -y
-'________________virtual OS________________'
-choco install docker-desktop -y
-choco install virtualbox -y
+winget install --id 7zip.7zip --accept-source-agreements
+winget install -e --id AnyDeskSoftwareGmbH.AnyDesk --accept-source-agreements
+'________________virtual OS and Cloud________________'
 # Install zsh and "oh my zsh" and power10k
+winget install -e --id Docker.DockerDesktop --accept-source-agreements
 winget install Canonical.Ubuntu.2204 --accept-source-agreements
 winget  install kalilinux.kalilinux --accept-source-agreements
+winget install -e --id Oracle.VirtualBox --accept-source-agreements
+winget install --id Hashicorp.Terraform --accept-source-agreements
+winget install --id Amazon.AWSC1LI --accept-source-agreements
 '________________Coding________________'
-choco install notepadplusplus.install -y
-choco install git -y
-choco install python -y
-choco install vscode.install -y
+winget install --id 9NCVDN91XZQP --accept-source-agreements #Python3.12
+winget install -e --id XP9KHM4BK9FZ7Q --accept-source-agreements# VS code
+winget install -e --id Git.Git --accept-source-agreements
+winget install --id 9N0DX20HK701 --accept-source-agreements # Windwos terminal
 '________________Internet browsers________________' 
-#choco install firefox -y
-#choco install googlechrome -y
-choco install internet-download-manager -y
-'________________Network tools________________'
-choco install termius -y
-choco install advanced-ip-scanner -y
-choco install wireshark -y  #network packet analyzer
-choco install winsetupfromusb -y #Bootable usb
-# choco install nexus-repository -y
-'________________system optimisation and anti virus________________'
-winget install --id Microsoft.Sysinternals.ProcessExplorer --accept-source-agreements
-winget install --id Python.Python.3.12 --accept-source-agreements
+winget install -e --id Waterfox.Waterfox --accept-source-agreements
+winget install -e --id Tonec.InternetDownloadManager --accept-source-agreements
 '________________Video player________________'
-choco install vlc -y
-'________________Game________________'
-choco install steam -y
-choco install geforce-experience -y
-Install-Module ps2exe -Force #Convert powershell script to executable file
-#####################################################################################################
-# These apps need some manual installation
+winget install -e --id VideoLAN.VLC --accept-source-agreements
