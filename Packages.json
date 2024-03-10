@@ -1,0 +1,428 @@
+{
+    "export_version": 2.0,
+    "packages": [
+        {
+            "Id": "WireGuard.WireGuard",
+            "Name": "WireGuard",
+            "Version": "0.5.3",
+            "Source": "Winget: winget",
+            "ManagerName": "Winget",
+            "InstallationOptions": {
+                "SkipHashCheck": false,
+                "InteractiveInstallation": false,
+                "RunAsAdministrator": false,
+                "Architecture": "",
+                "InstallationScope": "",
+                "CustomParameters": [],
+                "PreRelease": false,
+                "CustomInstallLocation": ""
+            },
+            "Updates": {
+                "UpdatesIgnored": false,
+                "IgnoredVersion": ""
+            }
+        },
+        {
+            "Id": "SomePythonThings.WingetUIStore",
+            "Name": "WingetUI",
+            "Version": "2.2.0",
+            "Source": "Winget: winget",
+            "ManagerName": "Winget",
+            "InstallationOptions": {
+                "SkipHashCheck": false,
+                "InteractiveInstallation": false,
+                "RunAsAdministrator": false,
+                "Architecture": "",
+                "InstallationScope": "",
+                "CustomParameters": [],
+                "PreRelease": false,
+                "CustomInstallLocation": ""
+            },
+            "Updates": {
+                "UpdatesIgnored": false,
+                "IgnoredVersion": ""
+            }
+        },
+        {
+            "Id": "Microsoft.WindowsTerminal",
+            "Name": "Windows Terminal",
+            "Version": "1.19.10573.0",
+            "Source": "Winget: winget",
+            "ManagerName": "Winget",
+            "InstallationOptions": {
+                "SkipHashCheck": false,
+                "InteractiveInstallation": false,
+                "RunAsAdministrator": false,
+                "Architecture": "",
+                "InstallationScope": "",
+                "CustomParameters": [],
+                "PreRelease": false,
+                "CustomInstallLocation": ""
+            },
+            "Updates": {
+                "UpdatesIgnored": false,
+                "IgnoredVersion": ""
+            }
+        },
+        {
+            "Id": "MicrosoftCorporationII.WindowsSubsystemFo\u2026",
+            "Name": "Windows Subsystem for Linux",
+            "Version": "2.0.9.0",
+            "Source": "Winget: winget",
+            "ManagerName": "Winget",
+            "InstallationOptions": {
+                "SkipHashCheck": false,
+                "InteractiveInstallation": false,
+                "RunAsAdministrator": false,
+                "Architecture": "",
+                "InstallationScope": "",
+                "CustomParameters": [],
+                "PreRelease": false,
+                "CustomInstallLocation": ""
+            },
+            "Updates": {
+                "UpdatesIgnored": false,
+                "IgnoredVersion": ""
+            }
+        },
+        {
+            "Id": "VideoLAN.VLC",
+            "Name": "VLC media player",
+            "Version": "3.0.20",
+            "Source": "Winget: winget",
+            "ManagerName": "Winget",
+            "InstallationOptions": {
+                "SkipHashCheck": false,
+                "InteractiveInstallation": false,
+                "RunAsAdministrator": false,
+                "Architecture": "",
+                "InstallationScope": "",
+                "CustomParameters": [],
+                "PreRelease": false,
+                "CustomInstallLocation": ""
+            },
+            "Updates": {
+                "UpdatesIgnored": false,
+                "IgnoredVersion": ""
+            }
+        },
+        {
+            "Id": "Canonical.Ubuntu.2204",
+            "Name": "Ubuntu",
+            "Version": "2204.3.49.0",
+            "Source": "Winget: winget",
+            "ManagerName": "Winget",
+            "InstallationOptions": {
+                "SkipHashCheck": false,
+                "InteractiveInstallation": false,
+                "RunAsAdministrator": false,
+                "Architecture": "",
+                "InstallationScope": "",
+                "CustomParameters": [],
+                "PreRelease": false,
+                "CustomInstallLocation": ""
+            },
+            "Updates": {
+                "UpdatesIgnored": false,
+                "IgnoredVersion": ""
+            }
+        },
+        {
+            "Id": "Notion.Notion",
+            "Name": "Notion 3.2.1",
+            "Version": "3.2.1",
+            "Source": "Winget: winget",
+            "ManagerName": "Winget",
+            "InstallationOptions": {
+                "SkipHashCheck": false,
+                "InteractiveInstallation": false,
+                "RunAsAdministrator": false,
+                "Architecture": "",
+                "InstallationScope": "",
+                "CustomParameters": [],
+                "PreRelease": false,
+                "CustomInstallLocation": ""
+            },
+            "Updates": {
+                "UpdatesIgnored": false,
+                "IgnoredVersion": ""
+            }
+        },
+        {
+            "Id": "kalilinux.kalilinux",
+            "Name": "Kali Linux",
+            "Version": "1.2024.1.0",
+            "Source": "Winget: winget",
+            "ManagerName": "Winget",
+            "InstallationOptions": {
+                "SkipHashCheck": false,
+                "InteractiveInstallation": false,
+                "RunAsAdministrator": false,
+                "Architecture": "",
+                "InstallationScope": "",
+                "CustomParameters": [],
+                "PreRelease": false,
+                "CustomInstallLocation": ""
+            },
+            "Updates": {
+                "UpdatesIgnored": false,
+                "IgnoredVersion": ""
+            }
+        },
+        {
+            "Id": "Google.GoogleDrive",
+            "Name": "Google Drive",
+            "Version": "87.0.2.0",
+            "Source": "Winget: winget",
+            "ManagerName": "Winget",
+            "InstallationOptions": {
+                "SkipHashCheck": false,
+                "InteractiveInstallation": false,
+                "RunAsAdministrator": false,
+                "Architecture": "",
+                "InstallationScope": "",
+                "CustomParameters": [],
+                "PreRelease": false,
+                "CustomInstallLocation": ""
+            },
+            "Updates": {
+                "UpdatesIgnored": false,
+                "IgnoredVersion": ""
+            }
+        },
+        {
+            "Id": "Git.Git",
+            "Name": "Git",
+            "Version": "2.43.0",
+            "Source": "Winget: winget",
+            "ManagerName": "Winget",
+            "InstallationOptions": {
+                "SkipHashCheck": false,
+                "InteractiveInstallation": false,
+                "RunAsAdministrator": false,
+                "Architecture": "",
+                "InstallationScope": "",
+                "CustomParameters": [],
+                "PreRelease": false,
+                "CustomInstallLocation": ""
+            },
+            "Updates": {
+                "UpdatesIgnored": false,
+                "IgnoredVersion": ""
+            }
+        },
+        {
+            "Id": "Foxit.FoxitReader",
+            "Name": "Foxit PDF Reader",
+            "Version": "2023.3.0.23028",
+            "Source": "Winget: winget",
+            "ManagerName": "Winget",
+            "InstallationOptions": {
+                "SkipHashCheck": false,
+                "InteractiveInstallation": false,
+                "RunAsAdministrator": false,
+                "Architecture": "",
+                "InstallationScope": "",
+                "CustomParameters": [],
+                "PreRelease": false,
+                "CustomInstallLocation": ""
+            },
+            "Updates": {
+                "UpdatesIgnored": false,
+                "IgnoredVersion": ""
+            }
+        },
+        {
+            "Id": "ESET.Security",
+            "Name": "ESET Security",
+            "Version": "17.0.16.0",
+            "Source": "Winget: winget",
+            "ManagerName": "Winget",
+            "InstallationOptions": {
+                "SkipHashCheck": false,
+                "InteractiveInstallation": false,
+                "RunAsAdministrator": false,
+                "Architecture": "",
+                "InstallationScope": "",
+                "CustomParameters": [],
+                "PreRelease": false,
+                "CustomInstallLocation": ""
+            },
+            "Updates": {
+                "UpdatesIgnored": false,
+                "IgnoredVersion": ""
+            }
+        },
+        {
+            "Id": "Docker.DockerDesktop",
+            "Name": "Docker Desktop",
+            "Version": "4.26.0",
+            "Source": "Winget: winget",
+            "ManagerName": "Winget",
+            "InstallationOptions": {
+                "SkipHashCheck": false,
+                "InteractiveInstallation": false,
+                "RunAsAdministrator": false,
+                "Architecture": "",
+                "InstallationScope": "",
+                "CustomParameters": [],
+                "PreRelease": false,
+                "CustomInstallLocation": ""
+            },
+            "Updates": {
+                "UpdatesIgnored": false,
+                "IgnoredVersion": ""
+            }
+        },
+        {
+            "Id": "Discord.Discord",
+            "Name": "Discord",
+            "Version": "1.0.9003",
+            "Source": "Winget: winget",
+            "ManagerName": "Winget",
+            "InstallationOptions": {
+                "SkipHashCheck": false,
+                "InteractiveInstallation": false,
+                "RunAsAdministrator": false,
+                "Architecture": "",
+                "InstallationScope": "",
+                "CustomParameters": [],
+                "PreRelease": false,
+                "CustomInstallLocation": ""
+            },
+            "Updates": {
+                "UpdatesIgnored": false,
+                "IgnoredVersion": ""
+            }
+        },
+        {
+            "Id": "Microsoft.AppInstaller",
+            "Name": "App Installer",
+            "Version": "1.22.10582.0",
+            "Source": "Winget: winget",
+            "ManagerName": "Winget",
+            "InstallationOptions": {
+                "SkipHashCheck": false,
+                "InteractiveInstallation": false,
+                "RunAsAdministrator": false,
+                "Architecture": "",
+                "InstallationScope": "",
+                "CustomParameters": [],
+                "PreRelease": false,
+                "CustomInstallLocation": ""
+            },
+            "Updates": {
+                "UpdatesIgnored": false,
+                "IgnoredVersion": ""
+            }
+        },
+        {
+            "Id": "AnyDeskSoftwareGmbH.AnyDesk",
+            "Name": "AnyDesk",
+            "Version": "8.0.8",
+            "Source": "Winget: winget",
+            "ManagerName": "Winget",
+            "InstallationOptions": {
+                "SkipHashCheck": false,
+                "InteractiveInstallation": false,
+                "RunAsAdministrator": false,
+                "Architecture": "",
+                "InstallationScope": "",
+                "CustomParameters": [],
+                "PreRelease": false,
+                "CustomInstallLocation": ""
+            },
+            "Updates": {
+                "UpdatesIgnored": false,
+                "IgnoredVersion": ""
+            }
+        },
+        {
+            "Id": "Famatech.AdvancedIPScanner",
+            "Name": "Advanced IP Scanner 2.5.1",
+            "Version": "2.5.4594.1",
+            "Source": "Winget: winget",
+            "ManagerName": "Winget",
+            "InstallationOptions": {
+                "SkipHashCheck": false,
+                "InteractiveInstallation": false,
+                "RunAsAdministrator": false,
+                "Architecture": "",
+                "InstallationScope": "",
+                "CustomParameters": [],
+                "PreRelease": false,
+                "CustomInstallLocation": ""
+            },
+            "Updates": {
+                "UpdatesIgnored": false,
+                "IgnoredVersion": ""
+            }
+        },
+        {
+            "Id": "7zip.7zip",
+            "Name": "7-Zip 23.01 (x64 edition)",
+            "Version": "23.01.00.0",
+            "Source": "Winget: winget",
+            "ManagerName": "Winget",
+            "InstallationOptions": {
+                "SkipHashCheck": false,
+                "InteractiveInstallation": false,
+                "RunAsAdministrator": false,
+                "Architecture": "",
+                "InstallationScope": "",
+                "CustomParameters": [],
+                "PreRelease": false,
+                "CustomInstallLocation": ""
+            },
+            "Updates": {
+                "UpdatesIgnored": false,
+                "IgnoredVersion": ""
+            }
+        }
+    ],
+    "incompatible_packages_info": "Incompatible packages cannot be installed from WingetUI, but they have been listed here for logging purposes.",
+    "incompatible_packages": [
+        {
+            "Id": "Razer Axon_is1",
+            "Name": "Razer Axon",
+            "Version": "1.3.4.0",
+            "Source": "Local PC"
+        },
+        {
+            "Id": "Microsoft.YourPhone_8wekyb3d8bbwe",
+            "Name": "Phone Link",
+            "Version": "1.24021.105.0",
+            "Source": "Microsoft Store"
+        },
+        {
+            "Id": "{96989481-8EFF-4E05-A381-48FAAC6E29CF}",
+            "Name": "NinjaTrader 8",
+            "Version": "8.0.22.2",
+            "Source": "Local PC"
+        },
+        {
+            "Id": "NetVideo System Smart Client Express Win6\u2026",
+            "Name": "NetVideo System Smart Client Express Win\u2026",
+            "Version": "8.5.22.0620",
+            "Source": "Local PC"
+        },
+        {
+            "Id": "Microsoft.GamingServices_8wekyb3d8bbwe",
+            "Name": "Gaming Services",
+            "Version": "18.86.29002.0",
+            "Source": "Microsoft Store"
+        },
+        {
+            "Id": "Microsoft.XboxGamingOverlay_8wekyb3d8bbwe",
+            "Name": "Game Bar",
+            "Version": "7.124.2141.0",
+            "Source": "Microsoft Store"
+        },
+        {
+            "Id": "Microsoft.549981C3F5F10_8wekyb3d8bbwe",
+            "Name": "Cortana",
+            "Version": "4.2308.1005.0",
+            "Source": "Microsoft Store"
+        }
+    ]
+}
