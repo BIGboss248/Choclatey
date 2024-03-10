@@ -17,7 +17,8 @@ Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope CurrentUser
 
 
 # Winget package manager
-winget install SomePythonThings.WingetUIStore
+winget install --id SomePythonThings.WingetUIStore --accept-source-agreements
+winget install --id ZeroTier.ZeroTierOne --accept-source-agreements
 '________________Doc viewer and editer________________'
 winget install -e --id Foxit.FoxitReader --accept-source-agreements
 winget install --id 9WZDNCRD29V9 --accept-source-agreements #install office365
