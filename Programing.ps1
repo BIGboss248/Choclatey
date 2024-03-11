@@ -1,7 +1,7 @@
 # chocolatey config file C:\ProgramData\chocolatey\config\chocolatey.config
 
 
-# Check for permissions 
+# Check for permissions
 if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
     # Relaunch as administrator
     $arguments = "& '" + $myinvocation.mycommand.definition + "'"
@@ -54,7 +54,7 @@ winget install --id 9NCVDN91XZQP --accept-source-agreements #Python3.12
 winget install -e --id XP9KHM4BK9FZ7Q --accept-source-agreements # VS code
 winget install -e --id Git.Git --accept-source-agreements
 winget install --id 9N0DX20HK701 --accept-source-agreements # Windwos terminal
-'________________Internet browsers________________' 
+'________________Internet browsers________________'
 winget install -e --id Waterfox.Waterfox --accept-source-agreements
 winget install -e --id Tonec.InternetDownloadManager --accept-source-agreements
 winget install --id OpenVPNTechnologies.OpenVPNConnect --accept-source-agreements
