@@ -1,10 +1,9 @@
-Softwares that are not included in the package manager are listed below with the relevent
-links the softwares are also uploaded to google drive
+# Personal device setup
 
-network tools
-    network management tool
-        GNS3: <https://www.gns3.com/software/download>
+## Software
 
-Antivirus and forensics tools  
-    FTK Imager: <https://www.exterro.com/ftk-imager>
+You can install software using the powershell scripts or use the wingetui (unigetui) to install the software
 
+## Starship
+
+For starship formatting to apply you need to install starship and nerdfont symbols change the font to nerdfont symbols
