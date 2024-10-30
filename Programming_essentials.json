@@ -264,15 +264,52 @@
         "UpdatesIgnored": false,
         "IgnoredVersion": ""
       }
+    },
+    {
+      "Id": "nerd-fonts-Hack",
+      "Name": "Nerd Fonts Hack",
+      "Version": "3.1.1",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Kubernetes.minikube",
+      "Name": "Kubernetes - Minikube - A Local Kubernet\u2026",
+      "Version": "1.32.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
     }
   ],
   "incompatible_packages_info": "Incompatible packages cannot be installed from WingetUI, but they have been listed here for logging purposes.",
-  "incompatible_packages": [
-    {
-      "Id": "PythonSoftwareFoundation.Python.3.12_qb\u2026",
-      "Name": "Python 3.12",
-      "Version": "3.12.752.0",
-      "Source": "Microsoft Store"
-    }
-  ]
+  "incompatible_packages": []
 }

@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  configurationVersion: 0.2.0
+  resources:
+    - resource: Install-Module
+      directives:
+        allowPrerelease: true
+      settings:
+        Name: "Microsoft.WinGet.DSC"
+        RequiredVersion: "1.9.2411"
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Python 3.12
+        allowPrerelease: true
+      settings:
+        id: Python.Python.3.12
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: npm
+      directives:
+        description: Install Node version 8+
+        allowPrerelease: true
+      settings :
+        id: OpenJS.NodeJS
+        source: winget
