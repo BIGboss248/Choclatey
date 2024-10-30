@@ -2,12 +2,6 @@
 properties:
   configurationVersion: 0.2.0
   resources:
-    - resource: Install-Module
-      directives:
-        allowPrerelease: true
-      settings:
-        Name: "Microsoft.WinGet.DSC"
-        RequiredVersion: "1.9.2411"
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: Install Python 3.12
@@ -22,4 +16,83 @@ properties:
         allowPrerelease: true
       settings :
         id: OpenJS.NodeJS
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install 7zip
+        allowPrerelease: true
+      settings :
+        id: 7zip.7zip
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install AnyDesk
+        allowPrerelease: true
+      settings :
+        id: AnyDeskSoftwareGmbH.AnyDesk
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Canonical.Ubuntu.2404
+      directives:
+        description: Install Canonical.Ubuntu.2404
+        allowPrerelease: true
+      settings :
+        id: Canonical.Ubuntu.2404
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Docker.DockerDesktop
+      directives:
+        description: Install Docker Desktop
+        allowPrerelease: true
+      settings :
+        id: Docker.DockerDesktop
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install SoftDeluxe.FreeDownloadManager
+        allowPrerelease: true
+      settings :
+        id: SoftDeluxe.FreeDownloadManager
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Git.Git
+        allowPrerelease: true
+      settings :
+        id: Git.Git
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Microsoft.VisualStudioCode
+        allowPrerelease: true
+      settings :
+        id: Microsoft.VisualStudioCode
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install OpenJS.NodeJS
+        allowPrerelease: true
+      settings :
+        id: OpenJS.NodeJS
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Starship.Starship
+        allowPrerelease: true
+      settings :
+        id: Starship.Starship
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install MartiCliment.UniGetUI
+        allowPrerelease: true
+      settings :
+        id: MartiCliment.UniGetUI
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Microsoft.WindowsTerminal
+        allowPrerelease: true
+      settings :
+        id: Microsoft.WindowsTerminal
         source: winget
