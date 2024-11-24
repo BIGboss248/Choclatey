@@ -41,15 +41,15 @@ $packages =
     Scope = $scope
 },
 [PSCustomObject]@{
-    Name  = "Zoom.Zoom"
-    Scope = $scope
-},
-[PSCustomObject]@{
     Name  = "Microsoft.VisualStudioCode"
     Scope = $scope
 },
 [PSCustomObject]@{
     Name  = "VideoLAN.VLC"
+    Scope = $null
+},
+[PSCustomObject]@{
+    Name  = "AnyDeskSoftwareGmbH.AnyDesk"
     Scope = $null
 }
 
