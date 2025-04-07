@@ -29,7 +29,7 @@ properties:
         description: Install AnyDesk
         allowPrerelease: true
       settings :
-        id: AnyDeskSoftwareGmbH.AnyDesk
+        id: AnyDesk.AnyDesk
         source: winget
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: Canonical.Ubuntu.2404
