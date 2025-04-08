@@ -4,18 +4,60 @@ properties:
   resources:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
+        description: Install Microsoft.DotNet.SDK.9
+        allowPrerelease: true
+      settings:
+        id: Microsoft.DotNet.SDK.9
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install DotNet
+        allowPrerelease: true
+      settings:
+        id: Microsoft.DotNet.DesktopRuntime.9
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Microsoft.DotNet.AspNetCore.9
+        allowPrerelease: true
+      settings:
+        id: Microsoft.DotNet.AspNetCore.9
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install WireGuard.WireGuard
+        allowPrerelease: true
+      settings:
+        id: WireGuard.WireGuard
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install VideoLAN.VLC
+        allowPrerelease: true
+      settings:
+        id: VideoLAN.VLC
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
         description: Install Python 3.12
         allowPrerelease: true
       settings:
         id: Python.Python.3.12
         source: winget
     - resource: Microsoft.WinGet.DSC/WinGetPackage
-      id: npm
       directives:
-        description: Install Node version 8+
+        description: Install GoLang.Go
+        allowPrerelease: true
+      settings:
+        id: GoLang.Go
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Google_chrome
+      directives:
+        description: Install Google chrome
         allowPrerelease: true
       settings :
-        id: OpenJS.NodeJS
+        id: Google.Chrome
         source: winget
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
