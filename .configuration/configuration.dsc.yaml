@@ -32,6 +32,13 @@ properties:
         source: winget
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
+        description: Install NTKERNEL.WireSockVPNClient
+        allowPrerelease: true
+      settings:
+        id: NTKERNEL.WireSockVPNClient
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
         description: Install VideoLAN.VLC
         allowPrerelease: true
       settings:
