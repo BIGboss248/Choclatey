@@ -199,11 +199,11 @@ disabled = false
 version_format = "v"
 
 [shell]
-fish_indicator = 'FISH'
-bash_indicator = 'BASH'
-cmd_indicator = 'CMD'
-zsh_indicator = 'ZSH'
-powershell_indicator = 'PS'
+fish_indicator = '󰈺'
+bash_indicator = ''
+cmd_indicator = ''
+zsh_indicator = ''
+powershell_indicator = ' '
 unknown_indicator = 'mystery shell'
 style = 'cyan bold'
 disabled = false
