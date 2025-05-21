@@ -184,7 +184,7 @@ symbol = '🛜 '
 format = '[$symbol$netns]($style) '
 
 [nodejs]
-format = 'via [🤖 $version](bold green) '
+format = '[$symbol $version](bold green) '
 style = "bold green"
 symbol = " "
 detect_files = [
@@ -196,7 +196,7 @@ detect_files = [
     "!bun.lockb",
 ]
 disabled = false
-version_format = "v"
+version_format = "v${raw}"
 
 [shell]
 fish_indicator = '󰈺'
