@@ -13,9 +13,9 @@ reg.exe add "HKCU\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize" 
 reg.exe add "HKCU\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize" /v SystemUsesLightTheme /t REG_DWORD /d 0 /f
 # Disable task bar search box
 reg.exe add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search" /v SearchboxTaskbarMode /t REG_DWORD /d 0 /f
-# Program files on D:
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion
 # PSReadLine
 Install-Module -Name PSReadLine
 # Open windows restore point settings
 SystemPropertiesProtection
+# Program files on D:
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion

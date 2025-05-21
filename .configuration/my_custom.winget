@@ -1,0 +1,174 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  configurationVersion: "0.2.0"
+  resources:
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install Microsoft.VisualStudioCode
+      allowPrerelease: true
+    settings :
+      id: XP9KHM4BK9FZ7Q
+      source: msstore
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install steam
+    settings:
+      source: winget
+      id: Valve.Steam
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install battle.net
+    settings:
+      source: winget
+      id: XPDM5VSMTKQLBJ
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install battle.net
+    settings:
+      source: winget
+      id: XPDM5VSMTKQLBJ
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install Microsoft.DotNet.SDK.9
+      allowPrerelease: true
+    settings:
+      id: Microsoft.DotNet.SDK.9
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install DotNet
+      allowPrerelease: true
+    settings:
+      id: Microsoft.DotNet.DesktopRuntime.9
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install Microsoft.DotNet.AspNetCore.9
+      allowPrerelease: true
+    settings:
+      id: Microsoft.DotNet.AspNetCore.9
+      source: winget
+  # - resource: Microsoft.WinGet.DSC/WinGetPackage
+  #   directives:
+  #     description: Install WireGuard.WireGuard
+  #     allowPrerelease: true
+  #   settings:
+  #     id: WireGuard.WireGuard
+  #     source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install NTKERNEL.WireSockVPNClient
+      allowPrerelease: true
+    settings:
+      id: NTKERNEL.WireSockVPNClient
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install Surfshark VPN
+      allowPrerelease: true
+    settings:
+      id: XP9KN848DQPDK9
+      source: msstore
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install VideoLAN.VLC
+      allowPrerelease: true
+    settings:
+      id: VideoLAN.VLC
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install Python 3.13
+      allowPrerelease: true
+    settings:
+      id: 9PNRBTZXMB4Z
+      source: msstore
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install 7zip
+      allowPrerelease: true
+    settings :
+      id: 7zip.7zip
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install AnyDesk
+      allowPrerelease: true
+    settings :
+      id: AnyDesk.AnyDesk
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install SoftDeluxe.FreeDownloadManager
+      allowPrerelease: true
+    settings :
+      id: XPDLMKFTXTDHSD
+      source: msstore
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install Git.Git
+      allowPrerelease: true
+    settings :
+      id: Git.Git
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install OpenJS.NodeJS
+      allowPrerelease: true
+    settings :
+      id: OpenJS.NodeJS
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install Starship.Starship
+      allowPrerelease: true
+    settings :
+      id: Starship.Starship
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install MartiCliment.UniGetUI
+      allowPrerelease: true
+    settings :
+      id: MartiCliment.UniGetUI
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install Microsoft.WindowsTerminal
+      allowPrerelease: true
+    settings :
+      id: 9N0DX20HK701
+      source: msstore
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install GoLang.Go
+      allowPrerelease: true
+    settings:
+      id: GoLang.Go
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: Google_chrome
+    directives:
+      description: Install Google chrome
+      allowPrerelease: true
+    settings :
+      id: Google.Chrome
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: Canonical.Ubuntu.2404
+    directives:
+      description: Install Canonical.Ubuntu.2404
+      allowPrerelease: true
+    settings :
+      id: 9NZ3KLHXDJP5
+      source: msstore
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: Docker.DockerDesktop
+    directives:
+      description: Install Docker Desktop
+      allowPrerelease: true
+    dependsOn:
+      - Canonical.Ubuntu.2404
+    settings :
+      id: Docker.DockerDesktop
+      source: winget
