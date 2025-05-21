@@ -1,7 +1,5 @@
 # Personal device setup
 
-# Setup windows
-
 Enable winget configure
 
 ```console
@@ -25,8 +23,12 @@ winget configure --enable
 run
 
 ```console
-winget configure ./configuration/configuration.dsc.yaml
+winget configure ./configuration/my_custom.winget
 ```
+
+## configure proxifier
+
+to allow direct steam download if the network is going through a VPN tunnel
 
 ## Install additional software from uniget
 

@@ -15,6 +15,8 @@ reg.exe add "HKCU\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize" 
 reg.exe add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search" /v SearchboxTaskbarMode /t REG_DWORD /d 0 /f
 # PSReadLine
 Install-Module -Name PSReadLine
+# Set execution policy to bypass to allow starship to run
+Set-ExecutionPolicy Bypass
 # Open windows restore point settings
 SystemPropertiesProtection
 # Program files on D:

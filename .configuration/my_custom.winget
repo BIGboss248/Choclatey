@@ -14,19 +14,37 @@ properties:
       description: Install steam
     settings:
       source: winget
+      id: Mikrotik.Winbox
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install steam
+    settings:
+      source: winget
       id: Valve.Steam
   - resource: Microsoft.WinGet.DSC/WinGetPackage
     directives:
       description: Install battle.net
     settings:
-      source: winget
+      source: msstore
       id: XPDM5VSMTKQLBJ
   - resource: Microsoft.WinGet.DSC/WinGetPackage
     directives:
       description: Install battle.net
     settings:
       source: winget
-      id: XPDM5VSMTKQLBJ
+      id: RazerInc.RazerInstaller.Synapse4
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install battle.net
+    settings:
+      source: winget
+      id: SteelSeries.GG
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install battle.net
+    settings:
+      source: winget
+      id: VentoByte.Proxifier
   - resource: Microsoft.WinGet.DSC/WinGetPackage
     directives:
       description: Install Microsoft.DotNet.SDK.9
