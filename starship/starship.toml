@@ -2,8 +2,9 @@
 
 add_newline = false
 command_timeout = 1000
-format = """$os$username$hostname$kubernetes$git_branch$git_status
-|$directory
+# $nodejs$dart$golang
+format = """$container$os$username$battery$hostname$localip$netns$git_branch$git_status$docker_context$kubernetes$nodejs$dart$golang$python
+$shell$status$directory
 └─> """
 
 # Drop ugly default prompt characters
@@ -11,50 +12,71 @@ format = """$os$username$hostname$kubernetes$git_branch$git_status
 success_symbol = ''
 error_symbol = ''
 
-# ---
+[container]
+disabled = false
+symbol = "⬢"
+format = '[$symbol \[$name\]]($style) '
+style = "red bold dimmed"
+
+[battery]
+format = '[$symbol$percentage]($style) '
+full_symbol = '🔋 '
+charging_symbol = '⚡️ '
+
+[[battery.display]]
+threshold = 20
+style = 'bold red'
+
+[[battery.display]]
+threshold = 50
+style = 'bold yellow'
 
 [os]
-format = '[$symbol](bold white) '   
+format = '[$symbol]()  '
 disabled = false
 
-[os.symbols]
-Windows = ' '
-Arch = '󰣇'
-Ubuntu = ''
-Macos = '󰀵'
 
-# ---y
+# This is the default symbols table.
+[os.symbols]
+
+Debian = ""
+Kali = ""
+Linux = "🐧"
+Ubuntu = "󰕈"
+Raspbian = "🍓"
+Windows = "🪟"
+
+# ---
 
 # Shows the username
 [username]
-style_user = 'white bold'
-style_root = 'black bold'
+style_user = 'white'
+style_root = 'blue'
 format = '[$user]($style) '
 disabled = false
 show_always = true
 
 # Shows the hostname
 [hostname]
-ssh_only = false
-format = 'host=>[$hostname](bold yellow) '
+ssh_only = true
+format = '$ssh_symbol [$hostname](bold yellow) '
+ssh_symbol = '🌐'
 disabled = false
-
 
 # Shows current directory
 [directory]
+truncate_to_repo = false
 truncation_length = 70
 truncation_symbol = '…/'
 home_symbol = '󰋜 ~'
-read_only_style = '197'
-read_only = '  '
-format = 'at [$path]($style)[$read_only]($read_only_style) '
+# read_only_style = '197'
+read_only = '🔒'
+format = '[$path]($style)[$read_only]($read_only_style) '
 
 # Shows current git branch
 [git_branch]
-symbol = ' '
-format = 'via [$symbol$branch]($style)'
-# truncation_length = 4
-truncation_symbol = '…/'
+symbol = ''
+format = '[$symbol $branch]($style)'
 style = 'bold green'
 
 # Shows current git status
@@ -73,30 +95,125 @@ staged = '[󰐗 staged=${count}](green) '
 renamed = '[󱍸 renamed=${count}](yellow) '
 deleted = '[󰍶 deleted=${count}](red) '
 
+[docker_context]
+disabled = false
+only_with_files = true
+detect_files = ['docker-compose.yml', 'docker-compose.yaml', 'Dockerfile']
+format = '[🐋 $context](blue bold)'
+
+
 # Shows kubernetes context and namespace
 [kubernetes]
-format = 'via [󱃾 $context\($namespace\)](bold purple) '
+format = '[󱃾 $context\($namespace\)](bold purple) '
 disabled = false
 
 # ---
 
-[vagrant]
-disabled = true
+[package]
+format = 'via [📦 $version](208 bold) '
 
-[docker_context]
-disabled = true
-
-[helm]
-disabled = true
+[pijul_channel]
+symbol = ""
 
 [python]
-disabled = true
+symbol = ""
+pyenv_version_name = true
+python_binary = [["python"], ["python3"], ["python2"]]
+detect_files = [
+    "requirements.txt",
+    ".python-version",
+    "pyproject.toml",
+    "Pipfile",
+    "tox.ini",
+    "setup.py",
+    "__init__.py",
+]
+detect_env_vars = ["VIRTUAL_ENV"]
+detect_extensions = ["py", "ipynb"]
+format = "via [${symbol}${pyenv_prefix}(${version} )(\\($virtualenv\\) )]($style)"
+version_format = "v${raw}"
 
-[nodejs]
-disabled = true
+[rlang]
+symbol = "󰟔"
 
 [ruby]
-disabled = true
+symbol = ""
 
-[terraform]
-disabled = true
+[rust]
+symbol = ""
+
+[scala]
+symbol = ""
+
+[dart]
+format = '[🎯$version](blue) '
+detect_files = ["pubspec.yaml", "pubspec.yml", "pubspec.lock"]
+disabled = false
+style = "bold blue"
+symbol = "🎯 "
+version_format = "${raw}"
+
+[golang]
+format = 'via [$symbol($version )($mod_version )]($style)'
+detect_extensions = ["go"]
+detect_files = [
+    "go.mod",
+    "go.sum",
+    "go.work",
+    "glide.yaml",
+    "Gopkg.yml",
+    "Gopkg.lock",
+    ".go-version",
+]
+detect_folders = ["Godeps"]
+disabled = false
+not_capable_style = "bold cyan"
+version_format = "v${raw}"
+symbol = ""
+
+[localip]
+ssh_only = false
+format = '[@$localipv4](#9966ff) '
+disabled = false
+
+
+[netns]
+disabled = false
+style = 'bold yellow'
+symbol = '🛜 '
+format = '[$symbol$netns]($style) '
+
+[nodejs]
+format = 'via [🤖 $version](bold green) '
+style = "bold green"
+symbol = " "
+detect_files = [
+    "package.json",
+    ".node-version",
+    ".nvmrc",
+    "!bunfig.toml",
+    "!bun.lock",
+    "!bun.lockb",
+]
+disabled = false
+version_format = "v"
+
+[shell]
+fish_indicator = 'FISH'
+bash_indicator = 'BASH'
+cmd_indicator = 'CMD'
+zsh_indicator = 'ZSH'
+powershell_indicator = 'PS'
+unknown_indicator = 'mystery shell'
+style = 'cyan bold'
+disabled = false
+format = '[$indicator]($style) '
+
+[status]
+
+symbol = '🔴'
+success_symbol = '🟢'
+sigint_symbol = "🟡"
+format = '$symbol($style) '
+map_symbol = true
+disabled = false
