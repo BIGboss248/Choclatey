@@ -1,4 +1,4 @@
-$ENV:STARSHIP_CONFIG = "$Home\OneDrive\My Software\Choclatey-Starship-Fonts\starship\starship.toml"
+$ENV:STARSHIP_CONFIG = "$env:OneDrive\My Software\Choclatey-Starship-Fonts\starship\starship.toml"
 Invoke-Expression (&starship init powershell) # DevSkim: ignore DS104456
 # Import the Chocolatey Profile that contains the necessary code to enable
 # tab-completions to function for `choco`.
