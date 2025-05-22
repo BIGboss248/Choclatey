@@ -4,6 +4,13 @@ properties:
   resources:
   - resource: Microsoft.WinGet.DSC/WinGetPackage
     directives:
+      description: Update Microsoft.powerShell
+      allowPrerelease: true
+    settings :
+      id:  Microsoft.powerShell
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
       description: Install Microsoft.VisualStudioCode
       allowPrerelease: true
     settings :
