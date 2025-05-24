@@ -11,7 +11,7 @@ $character"""
 version_format = "v"
 symbol = "△ "
 style = "bold blue"
-format = "via [$symbol($version )]($style)"
+format = "[$symbol($version )]($style)"
 disabled = false
 detect_folders = []
 detect_files = ["CMakeLists.txt", "CMakeCache.txt"]
@@ -55,7 +55,7 @@ commands = [
 version_format = "v"
 symbol = "C "
 style = "149 bold"
-format = "via [$symbol($version(-$name) )]($style)"
+format = "[$symbol($version(-$name) )]($style)"
 disabled = false
 detect_folders = []
 detect_files = []
@@ -157,8 +157,8 @@ am = "AM"
 
 # Shows current git branch
 [git_branch]
-symbol = ''
-format = '[$symbol $branch]($style)'
+symbol = '󰊢 '
+format = '[$symbol$branch]($style)'
 style = 'bold green'
 
 # Shows current git status
@@ -192,7 +192,7 @@ disabled = false
 # ---
 
 [package]
-format = 'via [📦 $version](208 bold) '
+format = '[📦 $version](208 bold) '
 
 [pijul_channel]
 symbol = ""
@@ -212,7 +212,7 @@ detect_files = [
 ]
 detect_env_vars = ["VIRTUAL_ENV"]
 detect_extensions = ["py", "ipynb"]
-format = "via [${symbol}${pyenv_prefix}(${version} )(\\($virtualenv\\) )]($style)"
+format = "[${symbol} ${pyenv_prefix}(${version} )(\\($virtualenv\\) )]($style)"
 version_format = "v${raw}"
 
 [rlang]
@@ -236,7 +236,7 @@ symbol = "🎯 "
 version_format = "${raw}"
 
 [golang]
-format = 'via [$symbol($version )($mod_version )]($style)'
+format = '[$symbol($version )($mod_version )]($style)'
 detect_extensions = ["go"]
 detect_files = [
     "go.mod",
@@ -268,7 +268,7 @@ format = '[$symbol$netns]($style) '
 [nodejs]
 format = '[$symbol $version](bold green) '
 style = "bold green"
-symbol = " "
+symbol = ""
 detect_files = [
     "package.json",
     ".node-version",
