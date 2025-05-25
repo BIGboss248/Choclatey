@@ -141,9 +141,16 @@ home_symbol = '󰋜 ~'
 # read_only_style = '197'
 read_only = '🔒'
 format = '[$path]($style)[$read_only]($read_only_style) '
+use_os_path_sep = true
+use_logical_path = true
+style = "cyan italic"
+repo_root_style = "cyan bold italic"
+repo_root_format = "[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) "
+read_only_style = "red"
+
 
 [git_state]
-style = "bold yellow"
+style = "yellow"
 revert = "REVERTING"
 rebase = "REBASING"
 merge = "MERGING"
@@ -159,12 +166,12 @@ am = "AM"
 [git_branch]
 symbol = '󰊢 '
 format = '[$symbol$branch]($style)'
-style = 'bold green'
+style = 'green'
 
 # Shows current git status
 [git_status]
 format = '([ \( $all_status$ahead_behind\)]($style) )'
-style = 'bold green'
+style = 'green'
 conflicted = '[ confliced=${count}](red) '
 up_to_date = '[󰘽 up-to-date](green) '
 untracked = '[󰋗 untracked=${count}](red) '
@@ -213,7 +220,7 @@ detect_files = [
 detect_env_vars = ["VIRTUAL_ENV"]
 detect_extensions = ["py", "ipynb"]
 format = "[${symbol} ${pyenv_prefix}(${version} )(\\($virtualenv\\) )]($style)"
-version_format = "v${raw}"
+version_format = "${raw}"
 
 [rlang]
 symbol = "󰟔"
@@ -236,7 +243,7 @@ symbol = "🎯 "
 version_format = "${raw}"
 
 [golang]
-format = '[$symbol($version )($mod_version )]($style)'
+format = '[$symbol ($version )($mod_version )]($style)'
 detect_extensions = ["go"]
 detect_files = [
     "go.mod",
@@ -249,8 +256,8 @@ detect_files = [
 ]
 detect_folders = ["Godeps"]
 disabled = false
-not_capable_style = "bold cyan"
-version_format = "v${raw}"
+not_capable_style = "cyan"
+version_format = "${raw}"
 symbol = ""
 
 [localip]
@@ -261,14 +268,14 @@ disabled = false
 
 [netns]
 disabled = false
-style = 'bold yellow'
+style = 'yellow'
 symbol = '🛜 '
 format = '[$symbol$netns]($style) '
 
 [nodejs]
-format = '[$symbol $version](bold green) '
-style = "bold green"
-symbol = ""
+format = '[$symbol $version](green) '
+style = "green"
+symbol = "[](bold green)"
 detect_files = [
     "package.json",
     ".node-version",
@@ -278,7 +285,7 @@ detect_files = [
     "!bun.lockb",
 ]
 disabled = false
-version_format = "v${raw}"
+version_format = "${raw}"
 
 [shell]
 fish_indicator = '[󰈺](#4AE8B6)'
