@@ -22,3 +22,10 @@ properties:
     settings :
       id:  Google.DartSDK
       source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Update    Microsoft.VisualStudio.2022.Community
+      allowPrerelease: true
+    settings :
+      id:     Microsoft.VisualStudio.2022.Community
+      source: winget
