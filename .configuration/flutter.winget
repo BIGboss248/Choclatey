@@ -15,3 +15,10 @@ properties:
     settings :
       id:  Google.PlatformTools
       source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Update Google.DartSDK
+      allowPrerelease: true
+    settings :
+      id:  Google.DartSDK
+      source: winget
