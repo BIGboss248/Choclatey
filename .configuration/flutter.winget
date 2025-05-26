@@ -1,0 +1,17 @@
+properties:
+  configurationVersion: "0.2.0"
+  resources:
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Update EclipseAdoptium.Temurin.24.JDK
+      allowPrerelease: true
+    settings :
+      id:  EclipseAdoptium.Temurin.24.JDK
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Update Google.PlatformTools
+      allowPrerelease: true
+    settings :
+      id:  Google.PlatformTools
+      source: winget
