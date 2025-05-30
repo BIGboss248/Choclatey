@@ -197,3 +197,19 @@ properties:
     settings :
       id: Docker.DockerDesktop
       source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: Cloudflare.cloudflared
+    directives:
+      description: Install Cloudflare.cloudflared
+      allowPrerelease: true
+    settings :
+      id: Cloudflare.cloudflared
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: Obsidian.Obsidian
+    directives:
+      description: Install Obsidian.Obsidian
+      allowPrerelease: true
+    settings :
+      id: Obsidian.Obsidian
+      source: winget
