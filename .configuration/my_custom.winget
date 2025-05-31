@@ -213,3 +213,11 @@ properties:
     settings :
       id: Obsidian.Obsidian
       source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: voidtools.Everything
+    directives:
+      description: Install voidtools.Everything
+      allowPrerelease: true
+    settings :
+      id: voidtools.Everything
+      source: winget
