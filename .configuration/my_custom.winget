@@ -221,3 +221,11 @@ properties:
     settings :
       id: voidtools.Everything
       source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: XPFCXHF337W98S
+    directives:
+      description: Install Devolutions remote maanger
+      allowPrerelease: true
+    settings :
+      id: XPFCXHF337W98S
+      source: msstore

@@ -41,3 +41,9 @@ You can install software using the powershell scripts or use the wingetui (unige
 ## Starship
 
 For starship formatting to apply you need to install starship and nerdfont symbols change the font to nerdfont symbols
+
+## Razer workshop GameDog
+
+Software for custom chroma effects in Dota2
+
+This one is not awailble via winget download and install manually from [GameDog chroma shop page](https://www.razer.com/chroma-workshop#--all--look--YWRyaWFuJTIwYnJldHRzY2huZWlkZXIvZ2FtZWRvZw_-__-_)
