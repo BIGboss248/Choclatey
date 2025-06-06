@@ -23,7 +23,7 @@ winget configure --enable
 run
 
 ```console
-winget configure ./configuration/my_custom.winget
+Get-ChildItem -Path .\.configuration\ -Filter *.winget | ForEach-Object { winget configure $_.FullName }
 ```
 
 ## configure proxifier
@@ -40,7 +40,7 @@ You can install software using the powershell scripts or use the wingetui (unige
 
 ## Starship
 
-For starship formatting to apply you need to install starship and nerdfont symbols change the font to nerdfont symbols
+For starship formatting to apply you need to install starship set execution policy to bypass and install  nerdfont symbols change the font of the terminal to nerdfont symbols
 
 ## Razer workshop GameDog
 

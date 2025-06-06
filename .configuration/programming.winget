@@ -1,0 +1,92 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+
+# packageNames:
+#   - Git.Git
+#   - OpenJS.NodeJS
+#   - GoLang.Go
+#   - Canonical.Ubuntu.2404
+#   - Docker.DockerDesktop
+#   - Cloudflare.cloudflared
+#   - EclipseAdoptium.Temurin.24.JDK
+#   - Google.DartSDK
+#   - Microsoft.VisualStudio.2022.Community
+#   - python 3.13
+
+properties:
+  configurationVersion: "0.2.0"
+  resources:
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install Git.Git
+      allowPrerelease: true
+    settings :
+      id: Git.Git
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install OpenJS.NodeJS
+      allowPrerelease: true
+    settings :
+      id: OpenJS.NodeJS
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install GoLang.Go
+      allowPrerelease: true
+    settings:
+      id: GoLang.Go
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: Canonical.Ubuntu.2404
+    directives:
+      description: Install Canonical.Ubuntu.2404
+      allowPrerelease: true
+    settings :
+      id: 9NZ3KLHXDJP5
+      source: msstore
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: Docker.DockerDesktop
+    directives:
+      description: Install Docker Desktop
+      allowPrerelease: true
+    dependsOn:
+      - Canonical.Ubuntu.2404
+    settings :
+      id: Docker.DockerDesktop
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: Cloudflare.cloudflared
+    directives:
+      description: Install Cloudflare.cloudflared
+      allowPrerelease: true
+    settings :
+      id: Cloudflare.cloudflared
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Update EclipseAdoptium.Temurin.24.JDK
+      allowPrerelease: true
+    settings :
+      id:  EclipseAdoptium.Temurin.24.JDK
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Update Google.DartSDK
+      allowPrerelease: true
+    settings :
+      id:  Google.DartSDK
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Update    Microsoft.VisualStudio.2022.Community
+      allowPrerelease: true
+    settings :
+      id:     Microsoft.VisualStudio.2022.Community
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install Python 3.13
+      allowPrerelease: true
+    settings:
+      id: 9PNRBTZXMB4Z
+      source: msstore

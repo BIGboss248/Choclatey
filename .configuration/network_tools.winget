@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+
+# Package names:
+# - Mikrotik.Winbox
+# - VentoByte.Proxifier
+# - NTKERNEL.WireSockVPNClient
+# - Surfshark
+# - Devolutions remote maanger
+# - WiresharkFoundation.Wireshark
+
+
+properties:
+  configurationVersion: "0.2.0"
+  resources:
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install Mikrotik.Winbox
+    settings:
+      source: winget
+      id: Mikrotik.Winbox
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install VentoByte.Proxifier
+    settings:
+      source: winget
+      id: VentoByte.Proxifier
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install NTKERNEL.WireSockVPNClient
+      allowPrerelease: true
+    settings:
+      id: NTKERNEL.WireSockVPNClient
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install Surfshark VPN
+      allowPrerelease: true
+    settings:
+      id: XP9KN848DQPDK9
+      source: msstore
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: XPFCXHF337W98S
+    directives:
+      description: Install Devolutions remote maanger
+      allowPrerelease: true
+    settings :
+      id: XPFCXHF337W98S
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: WiresharkFoundation.Wireshark
+    directives:
+      description: Install Wireshark
+      allowPrerelease: true
+    settings :
+      id: WiresharkFoundation.Wireshark
+      source: winget
