@@ -130,10 +130,18 @@ properties:
       id: voidtools.Everything
       source: winget
   - resource: Microsoft.WinGet.DSC/WinGetPackage
-    id: voidtools.Everything
+    id: RamenSoftware.Windhawkg
     directives:
       description: Install RamenSoftware.Windhawk
       allowPrerelease: true
     settings :
       id: RamenSoftware.Windhawk
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: Orb.Orb
+    directives
+      description: Install Orb.Orb
+      allowPrerelease: true
+    settings :
+      id: Orb.Orb
       source: winget
