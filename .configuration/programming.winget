@@ -85,8 +85,8 @@ properties:
       source: winget
   - resource: Microsoft.WinGet.DSC/WinGetPackage
     directives:
-      description: Install Python 3.13
+      description: Python.Python.3.133
       allowPrerelease: true
     settings:
-      id: 9PNRBTZXMB4Z
-      source: msstore
+      id: Python.Python.3.13
+      source: winget
