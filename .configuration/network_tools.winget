@@ -39,6 +39,13 @@ properties:
       id: XP9KN848DQPDK9
       source: msstore
   - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install Cisco anyconnect VPN
+      allowPrerelease: true
+    settings:
+      id: 9WZDNCRDJ8LH
+      source: msstore
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
     id: XPFCXHF337W98S
     directives:
       description: Install Devolutions remote maanger
