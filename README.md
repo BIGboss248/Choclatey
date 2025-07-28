@@ -12,6 +12,8 @@ winget configure --enable
 
 Windows_Settings_Setup.ps1
 
+## Apply windows terminal settings by pasting the terminal.json in windows terminal json settings file
+
 ## Install Software
 
 Enable winget configure
