@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
 
 # List of all package names:
-# - Microsoft.powerShell
+# - Microsoft.powerShell V7
 # - Microsoft.VisualStudioCode
 # - Microsoft.DotNet.SDK.9
 # - Microsoft.DotNet.DesktopRuntime.9
@@ -9,14 +9,13 @@
 # - VideoLAN.VLC
 # - 7zip.7zip
 # - AnyDesk.AnyDesk
-# - XPDLMKFTXTDHSD
+# - XPDLMKFTXTDHSD (Free Download Manager)
 # - Starship.Starship
 # - MartiCliment.UniGetUI
 # - Microsoft.WindowsTerminal
 # - Google.Chrome
 # - Obsidian.Obsidian
-# - voidtools.Everything
-# - RamenSoftware.Windhawk
+# - Orb.Orb
 
 properties:
   configurationVersion: "0.2.0"
@@ -122,24 +121,8 @@ properties:
       id: Obsidian.Obsidian
       source: winget
   - resource: Microsoft.WinGet.DSC/WinGetPackage
-    id: voidtools.Everything
-    directives:
-      description: Install voidtools.Everything
-      allowPrerelease: true
-    settings :
-      id: voidtools.Everything
-      source: winget
-  - resource: Microsoft.WinGet.DSC/WinGetPackage
-    id: RamenSoftware.Windhawkg
-    directives:
-      description: Install RamenSoftware.Windhawk
-      allowPrerelease: true
-    settings :
-      id: RamenSoftware.Windhawk
-      source: winget
-  - resource: Microsoft.WinGet.DSC/WinGetPackage
     id: Orb.Orb
-    directives
+    directives:
       description: Install Orb.Orb
       allowPrerelease: true
     settings :

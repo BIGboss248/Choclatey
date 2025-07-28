@@ -1,4 +1,31 @@
 # yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+
+#* A list of all the packages in this connfiguration:
+# - Microsoft.DotNet.SDK.9
+# - Microsoft.Powershell
+# - Microsoft.DotNet.DesktopRuntime.9
+# - Microsoft.DotNet.AspNetCore.9
+# - NTKERNEL.WireSockVPNClient
+# - XP9KN848DQPDK9 (Surfshark VPN)
+# - VideoLAN.VLC
+# - 9PNRBTZXMB4Z (Python 3.13)
+# - 7zip.7zip
+# - AnyDesk.AnyDesk
+# - XPDLMKFTXTDHSD (Free Download Manager)
+# - Git.Git
+# - XP9KHM4BK9FZ7Q (Visual Studio Code)
+# - OpenJS.NodeJS
+# - Starship.Starship
+# - MartiCliment.UniGetUI
+# - 9N0DX20HK701 (Windows Terminal)
+# - GoLang.Go
+# - Google.Chrome
+# - Canonical.Ubuntu.2404
+# - Docker.DockerDesktop
+
+
+
+
 properties:
   configurationVersion: 0.2.0
   resources:
