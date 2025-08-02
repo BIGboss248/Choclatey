@@ -1,0 +1,147 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+
+# List of all package names:
+# - Microsoft.powerShell
+# - Microsoft.VisualStudioCode
+# - Microsoft.DotNet.SDK.9
+# - Microsoft.DotNet.DesktopRuntime.9
+# - Microsoft.DotNet.AspNetCore.9
+# - VideoLAN.VLC
+# - 7zip.7zip
+# - AnyDesk.AnyDesk
+# - XPDLMKFTXTDHSD
+# - Starship.Starship
+# - MartiCliment.UniGetUI
+# - Microsoft.WindowsTerminal
+# - Google.Chrome
+# - Obsidian.Obsidian
+# - voidtools.Everything
+# - RamenSoftware.Windhawk
+
+properties:
+  configurationVersion: "0.2.0"
+  resources:
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Update Microsoft.powerShell
+      allowPrerelease: true
+    settings :
+      id:  Microsoft.powerShell
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install Microsoft.VisualStudioCode
+      allowPrerelease: true
+    settings :
+      id: XP9KHM4BK9FZ7Q
+      source: msstore
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install Microsoft.DotNet.SDK.9
+      allowPrerelease: true
+    settings:
+      id: Microsoft.DotNet.SDK.9
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install DotNet
+      allowPrerelease: true
+    settings:
+      id: Microsoft.DotNet.DesktopRuntime.9
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install Microsoft.DotNet.AspNetCore.9
+      allowPrerelease: true
+    settings:
+      id: Microsoft.DotNet.AspNetCore.9
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install VideoLAN.VLC
+      allowPrerelease: true
+    settings:
+      id: VideoLAN.VLC
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install 7zip
+      allowPrerelease: true
+    settings :
+      id: 7zip.7zip
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install AnyDesk
+      allowPrerelease: true
+    settings :
+      id: AnyDesk.AnyDesk
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install SoftDeluxe.FreeDownloadManager
+      allowPrerelease: true
+    settings :
+      id: XPDLMKFTXTDHSD
+      source: msstore
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install Starship.Starship
+      allowPrerelease: true
+    settings :
+      id: Starship.Starship
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install MartiCliment.UniGetUI
+      allowPrerelease: true
+    settings :
+      id: MartiCliment.UniGetUI
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install Microsoft.WindowsTerminal
+      allowPrerelease: true
+    settings :
+      id: 9N0DX20HK701
+      source: msstore
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: Google_chrome
+    directives:
+      description: Install Google chrome
+      allowPrerelease: true
+    settings :
+      id: Google.Chrome
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: Obsidian.Obsidian
+    directives:
+      description: Install Obsidian.Obsidian
+      allowPrerelease: true
+    settings :
+      id: Obsidian.Obsidian
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: voidtools.Everything
+    directives:
+      description: Install voidtools.Everything
+      allowPrerelease: true
+    settings :
+      id: voidtools.Everything
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: RamenSoftware.Windhawkg
+    directives:
+      description: Install RamenSoftware.Windhawk
+      allowPrerelease: true
+    settings :
+      id: RamenSoftware.Windhawk
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: Orb.Orb
+    directives:
+      description: Install Orb.Orb
+      allowPrerelease: true
+    settings :
+      id: Orb.Orb
+      source: winget

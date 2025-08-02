@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+
+# List of all package names
+# packages:
+#   - Valve.Steam
+#   - XPDM5VSMTKQLBJ
+#   - RazerInc.RazerInstaller.Synapse4
+#   - SteelSeries.GG
+
+properties:
+  configurationVersion: "0.2.0"
+  resources:
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install steam
+    settings:
+      source: winget
+      id: Valve.Steam
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install battle.net
+    settings:
+      source: msstore
+      id: XPDM5VSMTKQLBJ
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install RazerInc.RazerInstaller.Synapse4
+    settings:
+      source: winget
+      id: RazerInc.RazerInstaller.Synapse4
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install SteelSeries.GG
+    settings:
+      source: winget
+      id: SteelSeries.GG

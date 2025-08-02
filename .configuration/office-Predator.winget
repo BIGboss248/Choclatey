@@ -1,0 +1,52 @@
+
+
+
+
+
+properties:
+  configurationVersion: "0.2.0"
+  resources:
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install 7zip
+      allowPrerelease: true
+    settings :
+      id: 7zip.7zip
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install VideoLAN.VLC
+      allowPrerelease: true
+    settings:
+      id: VideoLAN.VLC
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install AnyDesk
+      allowPrerelease: true
+    settings :
+      id: AnyDesk.AnyDesk
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    directives:
+      description: Install Microsoft.WindowsTerminal
+      allowPrerelease: true
+    settings :
+      id: 9N0DX20HK701
+      source: msstore
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: Google_chrome
+    directives:
+      description: Install Google chrome
+      allowPrerelease: true
+    settings :
+      id: Google.Chrome
+      source: winget
+  - resource: Microsoft.WinGet.DSC/WinGetPackage
+    id: Orb.Orb
+    directives:
+      description: Install Orb.Orb
+      allowPrerelease: true
+    settings :
+      id: Orb.Orb
+      source: winget
